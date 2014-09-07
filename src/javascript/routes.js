@@ -7,7 +7,8 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl:'pages/createAccount.html'
         })
         .when('/home', {
-            templateUrl:'pages/magic.html'
+            templateUrl:'pages/magic.html',
+            controller:'HomeController'
         });
     $routeProvider.otherwise({redirectTo: ''});
 }]);
