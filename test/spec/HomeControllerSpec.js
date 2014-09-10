@@ -5,10 +5,10 @@ describe("Home Controller ", function(){
         scope = $rootScope.$new();
         $controller("HomeController", {
             $scope:scope
-        })
+        });
     }));
 
     it("shoulde init when render home", function(){
         expect(scope.Magic).toEqual(1234);
-    })
 })
+});
